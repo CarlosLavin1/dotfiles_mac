@@ -16,7 +16,3 @@ background-blur=true
 macos-titlebar-style = hidden
 cursor-style-blink = false
 shell-integration-features = no-cursor
-
-keybind = ctrl+t=new_tab
-keybind = performable:ctrl+c=copy_to_clipboard
-keybind = performable:ctrl+v=paste_from_clipboard
