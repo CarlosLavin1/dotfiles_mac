@@ -112,8 +112,7 @@ source ~/.zsh_profile
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias off='sudo shutdown now'
-alias c="cursor $1" 
+alias c="open $1 -a \"Cursor\"" 
 alias gs="git status"
 
 gitpush() {
@@ -149,8 +148,3 @@ export NVM_DIR="$HOME/.nvm"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# swww
-export WLR_NO_HARDWARE_CURSORS=1
-export WLR_BACKENDS=vulkan
-export WLR_RENDERER=vulkan
