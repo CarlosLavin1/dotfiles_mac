@@ -1,4 +1,5 @@
-return {
+return {}
+--[[return {
 	{
 		"frankroeder/parrot.nvim",
 		dependencies = { "ibhagwan/fzf-lua", "nvim-lua/plenary.nvim", "folke/noice.nvim" },
@@ -12,9 +13,8 @@ return {
 						api_key = os.getenv("GEMINI_API_KEY"),
 					},
 					-- provide an empty list to make provider available (no API key required)
-					openai = {},
 				},
 			})
 		end,
 	},
-}
+}]]

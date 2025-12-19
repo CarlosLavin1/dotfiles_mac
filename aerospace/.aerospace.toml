@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders active_color=0xffc4a7e7 inactive_color=0xff494d64 width=5.0'
+    'exec-and-forget borders active_color=0xffc4a7e7 inactive_color=0xff494d64 width=5.0 hidpi=on'
 ]
 
 exec-on-workspace-change = ['/bin/bash', '-c',
@@ -182,6 +182,11 @@ run = [
 ]
 [[on-window-detected]]
 if.app-id = 'com.apple.iphonesimulator'
+run = [
+'layout floating'
+]
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
 run = [
 'layout floating'
 ]
